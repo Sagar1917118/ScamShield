@@ -1,0 +1,142 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+/* Homepage Container */
+.homepage {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 73px);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #004d40;
+  padding: 20px 30px;
+  color: #fff;
+}
+
+.navbar .logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #80cbc4;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  padding: 40px;
+  background: url("https://via.placeholder.com/1500x800?text=ScamShield+Background")
+    center/cover no-repeat;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 77, 64, 0.7);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.dynamic-text {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  padding: 15px 30px;
+  background-color: #80cbc4;
+  border: none;
+  color: #004d40;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #4db6ac;
+}
+
+/* Hero Image */
+.hero-image {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 80%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-image {
+    margin-top: 20px;
+  }
+}
+
+.userProf {
+  padding: 5px 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  color: black;
+}
